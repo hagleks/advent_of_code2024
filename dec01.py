@@ -8,7 +8,7 @@ with open("dec01_data.txt", "r") as input_file:
     lines = input_file.readlines()
 
     for line in lines:
-        values = re.split("   ", line)
+        values = re.split('\s+', line)
         left_values.append( int(values[0].strip()) )
         right_values.append( int(values[1].strip()) )
 
